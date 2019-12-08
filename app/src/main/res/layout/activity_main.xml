@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/songmenu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lastsong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一首" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始/暂停" />
+
+        <Button
+            android:id="@+id/nextsong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一首" />
+        <TextView
+            android:id="@+id/songname"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="待显示歌曲名称"
+            />
+        />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/xunhuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="循环播放" />
+
+        <Button
+            android:id="@+id/suiji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="随机播放" />
+
+        <Button
+            android:id="@+id/shunxu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="顺序播放" />
+        />
+        <TextView
+            android:id="@+id/setStyle"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="播放顺序"
+            />
+    </LinearLayout>
+</LinearLayout>
